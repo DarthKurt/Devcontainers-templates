@@ -9,7 +9,27 @@ Cross-platform development of C++ applications in Linux Sandbox
 |-----|-----|-----|-----|
 | imageVersion | Version of the container. | string | 0.1.0 |
 | imageVariant | Base environment version. | string | debian-12 |
-| toolingHash | Hash of tooling combinations. To calculate it, get SHA512 of string with tools, ie {vCMake}-{LLVM}-{LLVM-MINGW}. Will fail if hash is wrong | string | none |
+| tooling | Combination of tools, ie {vCMake}-{LLVM}-{LLVM-MINGW} | string | none |
+
+## Image
+
+This template references an image that was pre-built.
+
+Image: [ghcr.io/darthkurt/devcontainer-cpp](https://github.com/DarthKurt/devcontainers/tree/main/src/devcontainer-cpp)
+
+## Tooling
+
+Pre-build versions. `none` means `none-none-none`.
+
+| CMake Version | LLVM Version | LLVM MinGW Version |
+|---------------|--------------|--------------------|
+| 4.0.2         | none         | none               |
+| none          | 19           | none               |
+| none          | none         | 20250528           |
+| 4.0.2         | 19           | none               |
+| 4.0.2         | none         | 20250528           |
+| none          | 19           | 20250528           |
+| 4.0.2         | 19           | 20250528           |
 
 ## Using Vcpkg
 
@@ -22,4 +42,4 @@ Most additional library packages installed using Vcpkg will be downloaded from t
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-template.json](https://github.com/DarthKurt/Devcontainers-templates/blob/main/src/cpp-cross/devcontainer-template.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-template.json](https://github.com/DarthKurt/devcontainers-templates/blob/main/src/cpp-cross/devcontainer-template.json).  Add additional notes to a `NOTES.md`._
