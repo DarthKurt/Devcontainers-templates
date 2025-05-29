@@ -1,4 +1,27 @@
 {
     "name": "C++",
-    "image": "ghcr.io/darthkurt/devcontainer-cpp:${templateOption:imageVersion}-${templateOption:imageVariant}-${templateOption:toolingHash}"
+    "image": "ghcr.io/darthkurt/devcontainer-cpp:${templateOption:imageVersion}-${templateOption:imageVariant}-${templateOption:toolingHash}",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.cpptools-themes",
+                "ms-azuretools.vscode-docker"
+            ],
+            "settings": {
+                "extensions.ignoreRecommendations": true,
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "terminal.integrated.shell.linux": "/bin/zsh",
+                // tell VSCode that you want the shell to be a login, interactive shell
+                "terminal.integrated.shellArgs.linux": [
+                    "-l",
+                    "-i"
+                ],
+                "clangd.path": "clangd",
+                "clang-format.executable": "clang-format",
+                "lldb.executable": "/usr/bin/lldb"
+            }
+        }
+    }
 }
