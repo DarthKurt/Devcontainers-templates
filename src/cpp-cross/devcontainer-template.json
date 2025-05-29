@@ -1,6 +1,6 @@
 {
     "id": "cpp-cross",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "name": "C++",
     "description": "Cross-platform development of C++ applications in Linux Sandbox",
     "platforms": ["C++"],
