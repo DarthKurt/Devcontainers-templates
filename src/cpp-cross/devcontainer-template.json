@@ -1,5 +1,5 @@
 {
-    "id": "cpp-cross-devcontainer",
+    "id": "cpp-cross",
     "version": "0.1.0",
     "name": "C++",
     "description": "Cross-platform development of C++ applications in Linux Sandbox",
