@@ -21,9 +21,12 @@
             ],
             "default": "debian-12"
         },
-        "toolingHash": {
+        "tooling": {
             "type": "string",
-            "description": "Hash of tooling combinations. To calculate it, get SHA512 of string with tools, ie {vCMake}-{LLVM}-{LLVM-MINGW}. Will fail if hash is wrong",
+            "description": "Combination of tools, ie {vCMake}-{LLVM}-{LLVM-MINGW}",
+            "enum": [
+                "aacba6036ea97415557975c4c6ed492c23fd7950eab19f47b5f19f6426dbc9f4"
+            ],
             "default": "none"
         }
     }
