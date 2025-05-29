@@ -1,0 +1,13 @@
+{
+    "name": "devcontainers",
+    "private": true,
+    "version": "0.1.0",
+    "type": "module",
+    "sideEffects": false,
+    "scripts": {
+        "build:cpp": "npx devcontainer build"
+    },
+    "devDependencies": {
+        "@devcontainers/cli": "^0.76.0"
+    }
+}

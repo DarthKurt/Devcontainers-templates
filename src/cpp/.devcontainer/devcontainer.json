@@ -1,0 +1,4 @@
+{
+    "name": "C++",
+    "image": "ghcr.io/darthkurt/devcontainer-cpp:${templateOption:version}-${templateOption:imageVariant}-${templateOption:toolingHash}"
+}

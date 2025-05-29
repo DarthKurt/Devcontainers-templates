@@ -1,0 +1,30 @@
+{
+    "id": "cpp-cross-devcontainer",
+    "version": "0.1.0",
+    "name": "C++",
+    "description": "Cross-platform development of C++ applications in Linux Sandbox",
+    "platforms": ["C++"],
+    "options": {
+        "version": {
+            "type": "string",
+            "description": "Version of the container.",
+            "enum": [
+                "0.1.0"
+            ],
+            "default": "0.1.0"
+        },
+        "imageVariant": {
+            "type": "string",
+            "description": "Base environment version.",
+            "enum": [
+                "debian-12"
+            ],
+            "default": "debian-12"
+        },
+        "toolingHash": {
+            "type": "string",
+            "description": "Hash of tooling combinations. To calculate it, get SHA512 of string with tools, ie <vCMake>-<LLVM>-<LLVM-MINGW>. Will fail if hash is wrong",
+            "default": "none"
+        }
+    }
+}

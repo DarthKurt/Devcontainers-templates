@@ -1,0 +1,10 @@
+# JetBrains
+**/.idea/
+*.iml
+
+# Node.js Tools for Visual Studio
+**/node_modules/
+
+# Misc
+*.DS_Store
+Thumbs.db
