@@ -1,3 +1,23 @@
+## Image
+
+This template references an image that was pre-built.
+
+Image: [ghcr.io/darthkurt/devcontainer-cpp](https://github.com/DarthKurt/devcontainers/tree/main/src/devcontainer-cpp)
+
+## Tooling
+
+Pre-build versions. `none` means `none-none-none`.
+
+| CMake Version | LLVM Version | LLVM MinGW Version |
+|---------------|--------------|--------------------|
+| 4.0.2         | none         | none               |
+| none          | 19           | none               |
+| none          | none         | 20250528           |
+| 4.0.2         | 19           | none               |
+| 4.0.2         | none         | 20250528           |
+| none          | 19           | 20250528           |
+| 4.0.2         | 19           | 20250528           |
+
 ## Using Vcpkg
 
 This dev container and its associated image includes a clone of the [`Vcpkg`](https://github.com/microsoft/vcpkg) repo for library packages, and a bootstrapped instance of the [Vcpkg-tool](https://github.com/microsoft/vcpkg-tool) itself.
