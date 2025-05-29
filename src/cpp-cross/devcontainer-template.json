@@ -23,7 +23,7 @@
         },
         "toolingHash": {
             "type": "string",
-            "description": "Hash of tooling combinations. To calculate it, get SHA512 of string with tools, ie <vCMake>-<LLVM>-<LLVM-MINGW>. Will fail if hash is wrong",
+            "description": "Hash of tooling combinations. To calculate it, get SHA512 of string with tools, ie {vCMake}-{LLVM}-{LLVM-MINGW}. Will fail if hash is wrong",
             "default": "none"
         }
     }
