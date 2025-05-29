@@ -18,8 +18,7 @@ jobs:
       - name: "Publish Templates"
         uses: devcontainers/action@v1
         with:
-          validate-only: "true"
-          publish-templates: "false"
+          publish-templates: "true"
           base-path-to-templates: "./src"
           generate-docs: "true"
 
